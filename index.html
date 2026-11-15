@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>WorkIT — Docs, Sheets & Tables in one workspace</title>
+  <meta name="description" content="WorkIT is a unified workspace for documents, spreadsheets, slides and databases. Write, calculate and organise your team's work in one place.">
+  <meta property="og:title" content="WorkIT — Unified document workspace">
+  <meta property="og:description" content="Docs, Sheets, Tables and Slides in one clean, fast workspace.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://workit.app/">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/" aria-label="WorkIT home">
+        <svg class="brand-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+          <rect x="2" y="2" width="28" height="28" rx="7" fill="#2563EB"/>
+          <path d="M10 22 16 10l6 12M12.6 18h6.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="brand-name">work<b>IT</b></span>
+      </a>
+
+      <nav class="side-nav" aria-label="Workspace">
+        <a class="side-link" href="#/"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg><span>Home</span></a>
+        <a class="side-link" href="#/docs"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></svg><span>Docs</span></a>
+        <a class="side-link" href="#/sheets"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 10h16M4 15h16M10 4v16M15 4v16"/></svg><span>Sheets</span></a>
+        <a class="side-link" href="#/tables"><svg viewBox="0 0 24 24"><path d="M4 5h16v4H4zM4 11h16v4H4zM4 17h16v4H4z"/></svg><span>Tables</span></a>
+        <a class="side-link" href="#/slides"><svg viewBox="0 0 24 24"><path d="M3 4h14v12H3zM7 20h12M17 8l4 4-4 4"/></svg><span>Slides</span></a>
+        <a class="side-link" href="#/pricing"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9a3 3 0 0 0 0 6h5a3 3 0 0 1 0 6H5"/></svg><span>Plans</span></a>
+      </nav>
+
+      <div class="side-foot">
+        <div class="user-chip" title="Signed in locally">
+          <span class="avatar" aria-hidden="true">E</span>
+          <div><div class="user-name">Eddie</div><div class="user-plan">Free · 5&nbsp;GB</div></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-col">
+      <header class="topbar">
+        <button class="icon-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <input class="global-search" id="global-search" type="search" placeholder="Search all documents…  ( / )" aria-label="Search documents">
+        <button class="icon-btn" id="theme-btn" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" id="theme-icon-sun"><path d="M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4 4.2 19.8M19.8 4.2l-1.4 1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+          <svg viewBox="0 0 24 24" id="theme-icon-moon" hidden><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+        </svg>
+        </button>
+      </header>
+
+      <main id="main" class="content" tabindex="-1">
+        <div id="view-root"></div>
+      </main>
+    </div>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
